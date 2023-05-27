@@ -1,0 +1,162 @@
+
+
+
+
+
+Test PHP 
+Raspundeti la intrebari.
+
+1.Cum fac un fisier PHP?
+R: Pentru a crea un fisier php este de ajuns sa cream un fisier caruia ii dam un nume si il salvam cu extensia .php (exemplu: index.php)
+-------------------
+
+2.Ce este o variabila?
+R: O variabila in general este definirea unei zone de din memoria calculatorului, zona pe care o cream pentru a stoca date pe care le putem utiliza ulterior.
+in php variabila poate purta u  num e precedata de semnul $ (Exemplu $nume)
+-------------------
+
+3.Cum adaug comentarii si care sunt modurile prin care pot adauga?
+Exista mai multe moduri de adauga comentarii in php in fuctie de nevoie astfel:
+R:
+// comentariu pe o singura linie
+
+/* comentariu pe
+mai multe
+linii /*
+-------------------
+
+4.Ce reprezinta simbolul ( . ) ? si la ce ne ajuta? 
+R: Simbolul . este pososit in php pentru concatenarea (unirea) mai multor valori de tip string (sir de caractere) 
+(Ex:
+$nume = "Bogdan";
+$cate = "trei";
+$propozitie = $nume . ' mananca ' . $cate . ' mere.';
+echo "$propozitie"; 
+
+Va afișa: Bogdan mananca trei mere.)
+-------------------
+
+5.Dupa terminarea unei linii de cod ce se pune ?
+R: Dupa terminarea unei linii de cod intotdeauna se pune simbolul ;
+-------------------
+
+6.Ce este ghilimeaua dubla si la ce ne ajuta? dar simpla? care este diferenta?
+R: Ghilimele duble sunt folosite pentru delimitarea sirurilor de caractere.
+Ghilimelele simple sunt folosit tot pentru delimitarea sirurilor de caractere.
+Diferenta dintre cele doua tipuri de ghilimele simple si duble consta in faptul ca in php putem folosi folosii numele variabilelor pentru a afisa valoarea lor doar in interiorul ghilimemelor duble. In interiourul ghilimemelelor simple php va afisa pur si simpolu numele variabilei si nu valoarea acesteia.
+-------------------
+
+
+
+7.Ce afiseaza urmatorul exercitiu : 
+
+$a = 20;
+$b = 10;
+echo print($a)+10;
+echo "</br>";
+echo print($b) + print($a) + 10;
+
+R:
+301
+3011
+-------------------
+
+
+8.Ce afiseaza echo ?
+echo afiseaza rezultatul adunarii functiei print cu 10
+-------------------
+
+
+9.Ce afiseaza print ?  de da rezultatul respectiv? 
+R:
+print returneaza valoarea variabilei $a adaugand la final valoarea implicita 1
+Rezultatul in cazul primului echo este 301 deoarece efectueaza adunarea 20+10 adaugand la final dupa valoarea 30 cifra 1 . De aici 301
+In cazul celui de al doilea echo rezultatul este acelasi 20+10=30 la care se adauga 1 de la r=primul print si inca un unu de la al doilea print . Dica 3011
+-------------------
+
+10.Ce este un array indexat, multidimensional dar asociativ?
+R:
+Un array indexat este o structura de stocare a datelor in care fiecare element din array are un index numeric asociat care incepe de la 0.
+Un array multidimensional este o structura de socare a datelor in care fiecare element este de asemenea tot un array.
+Un array asociativ este o structura de socare a datelor in care fiecare element are in loc de index numeric, o cheie unica. 
+
+-------------------
+
+
+11. Am array de mai jos, cum adaug o noua vloare?
+
+	$lista = array(	"paine" , "lapte" , "oua"	);
+	Vreau o noua valoare dupa oua, si anume ciocolata, doresc raspunsul doar, utilizand variabila de la array 
+	R:
+	array_push($lista, "oua");
+-------------------
+
+
+
+12. Exercitiu : 
+
+	$a = 10;
+	$b = 30;
+	
+	echo pow($a,2) + pow($b,2); // ce o sa afiseze si de ce raspunsul x?
+	
+	echo ((10+2) / 2 + (3 * 10 ) / 0) * 0 ) // ce o sa afiseze? si cu ce incepem prima oara cand avem o astfel de ecuatie?
+
+	R: Parse error: syntax error, unexpected ')', expecting ';' or ',' in C:\wamp64\www\test27052023\index.php on line ...
+
+echo pow($a,2) + pow($b,2); 1000
+	echo (((10+2) / 2 + (3 * 10 ) / 0) * 0 ) ) - Eroare de Impartire la zero.
+	-------------------
+	
+
+
+13. Ce este un float? 
+R: float este un tip de date reale cu zecimale cu virgula mobila
+-------------------
+
+14, Ce este un int?
+R: Este un tip de date pentru numere naturale intregi.
+-------------------
+
+15. Ce functie folosim pentru rontunjirea numarului 2.6 la 3?
+R:
+round();
+-------------------
+
+16. Ce functie folosim pentru verificarea numarului de caractere dintr-un sir?
+R:
+strlen();
+-------------------
+
+17. Ce face isset?
+R:Verifica daca o variabila este setata sau nu. si intoarce o valoare de tip boolean.
+-------------------
+
+
+18. Ce face empty?
+R: verifica daca o variabila nu are valoare sau nu exista si intoarce o valoare de tip boolean.
+-------------------
+
+19. Ce inseamna semnul < ? dar > ?
+R: Inceput si sfarsit de cod php.
+-------------------
+
+20. Ce inseamna != ? dar !== ,? dar === , == ? dar si <=>  ? :)
+R:
+!= verifica daca doua valori sunt diferite ca valoare
+!== verifica daca doua valori sunt diferite ca valoare si ca tip de date
+=== verifica daca doua valori sunt egale ca valoare si au acelasi tip de date
+== verifica daca doua valori sunt egale ca valoare
+<=> compara doua valori si intoarce -1, 0 sau 1 in functie de care ste mai mare sau daca sunt egale.
+-------------------
+
+
+
+
+
+	
+
+
+
+
+
